@@ -35,11 +35,6 @@ This project provides a Dockerized PostgreSQL image with customizable environmen
 
 <h2 id="features">🔥 Features</h2>
 
-- **Docker Containerization:** The application is containerized for consistent deployment and scaling.
-- **Persistent Data:** Uses a volume to store PostgreSQL data for reliability and consistency across restarts.
-
-<h2 id="features">🔥 Features</h2>
-
 + **Docker Containerization:** The application is containerized for consistent deployment and scaling.
 + **Persistent Data:** Binds the data directory from the host machine to the container, ensuring persistent data storage even with container restarts.
 + **.env Configuration:** All environment variables are easily configurable using the `.env` file, simplifying configuration management.
