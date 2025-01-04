@@ -58,7 +58,7 @@ This project provides a Dockerized PostgreSQL image with customizable environmen
 git clone https://github.com/ahmettoguz/core-docker-config
 git clone https://github.com/ahmettoguz/core-postgresql
 ```
-
+- Create `.env` file based on the `.env.example` file and configure it appropriately.
 - Refer to the documentation provided in the [`core-docker-config`](https://github.com/ahmettoguz/core-docker-config) project for the system startup commands.
 
 <br/>
