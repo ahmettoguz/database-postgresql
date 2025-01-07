@@ -1,4 +1,4 @@
-<h1 id="top" align="center">🚢 v1.0.0 🚢</h1>
+<h1 id="top" align="center">🚢 v1.1.0 🚢</h1>
 
 <br>
 
@@ -17,6 +17,7 @@
 - **.env Configuration:** All environment variables are easily configurable using the `.env` file, simplifying configuration management.
 - **pgAdmin Backup:** Exports from pgAdmin are stored in the bind mount directory `/backup` for easy access and management.
 - **Docker Compose Deployment:** Deployment is made easy with `docker-compose` for simple and reproducible setup, eliminating the need for long commands.
+- **Relational Database Guide:** A comprehensive guide on relational database structure, including one-to-one, one-to-many, and many-to-many relationships, is available detailed reference.
 
 <br/>
 
