@@ -45,11 +45,11 @@ This project provides a Dockerized PostgreSQL image with customizable environmen
 
 <h2 id="releases">🚢 Releases</h2>
 
-&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-postgresql/tree/v1.0.0)
+&nbsp; [![.](https://img.shields.io/badge/1.2.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-postgresql/tree/v1.2.0)
 
 &nbsp; [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-postgresql/tree/v1.1.0)
 
-&nbsp; [![.](https://img.shields.io/badge/1.2.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-postgresql/tree/v1.2.0)
+&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-postgresql/tree/v1.0.0)
 
 <br/>
 
