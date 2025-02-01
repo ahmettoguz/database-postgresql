@@ -3,7 +3,7 @@
 <br>
 
 <div align="center">
-    <img height=200 src="assets/banner.png">
+    <img height=250 src="assets/banner.png">
 </div>
 
 <br>
@@ -21,7 +21,7 @@
 
 <h2 id="intro">📌 About Project</h2>
 
-This project provides a Dockerized PostgreSQL image with customizable environment configuration. Designed to simplify database setup and management, it incorporates flexibility and scalability using Docker's containerization features.
+This project provides a Dockerized PostgreSQL image with customizable environment configuration. Designed to simplify database setup and management, it incorporates flexibility and scalability using Docker's containerization features. Additionally, a guide on relational database structure is available at `/guide`.
 
 <br/>
 
@@ -38,12 +38,16 @@ This project provides a Dockerized PostgreSQL image with customizable environmen
 + **Docker Containerization:** The application is containerized for consistent deployment and scaling.
 + **Persistent Data:** Binds the data directory from the host machine to the container, ensuring persistent data storage even with container restarts.
 + **.env Configuration:** All environment variables are easily configurable using the `.env` file, simplifying configuration management.
-+ **pgAdmin Backup:** Exports from pgAdmin are stored in the bind mount directory `/backup` for easy access and management.
 + **Docker Compose Deployment:** Deployment is made easy with `docker-compose` for simple and reproducible setup, eliminating the need for long commands.
++ **Relational Database Guide:** A comprehensive guide on relational database structure, including one-to-one, one-to-many, and many-to-many relationships, is available detailed reference.
 
 <br/>
 
 <h2 id="releases">🚢 Releases</h2>
+
+&nbsp; [![.](https://img.shields.io/badge/1.2.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-postgresql/tree/v1.2.0)
+
+&nbsp; [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-postgresql/tree/v1.1.0)
 
 &nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-postgresql/tree/v1.0.0)
 
