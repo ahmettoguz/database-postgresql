@@ -63,6 +63,8 @@ docker compose -p database up -d postgresql
 docker logs -f                   database-postgresql-c
 ```
 
+- Refer to [`pgAdmin`](https://github.com/ahmettoguz/database-pgadmin) repository to launch pgAdmin to interact with database using GUI.
+
 <br/>
 
 ### [🔝](#top)
