@@ -1,4 +1,4 @@
-<h1 id="top" align="center">Core PostgreSQL</h1>
+<h1 id="top" align="center">Database PostgreSQL</h1>
 
 <br>
 
@@ -21,7 +21,7 @@
 
 <h2 id="intro">📌 About Project</h2>
 
-This project provides a Dockerized PostgreSQL image with customizable environment configuration. Designed to simplify database setup and management, it incorporates flexibility and scalability using Docker's containerization features. Additionally, a guide on relational database structure is available at `/guide`.
+This project simplifies the deployment of PostgreSQL, using Docker Compose. It provides pre-configured `.env` variable configurations. Additionally, a guide on relational database structure is available at `/guide`.
 
 <br/>
 
@@ -35,35 +35,63 @@ This project provides a Dockerized PostgreSQL image with customizable environmen
 
 <h2 id="features">🔥 Features</h2>
 
-+ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
-+ **Persistent Data:** Binds the data directory from the host machine to the container, ensuring persistent data storage even with container restarts.
-+ **.env Configuration:** All environment variables are easily configurable using the `.env` file, simplifying configuration management.
-+ **Docker Compose Deployment:** Deployment is made easy with `docker-compose` for simple and reproducible setup, eliminating the need for long commands.
-+ **Relational Database Guide:** A comprehensive guide on relational database structure, including one-to-one, one-to-many, and many-to-many relationships, is available detailed reference.
+- **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
+- **Docker Compose Deployment:** Simplifies deployment with Docker Compose configuration, enabling easy setup and service orchestration without complex commands.
+- **Network Compatibility:** Uses shared Docker network to work with other services.
+- **Persistent Data:** Binds the data directory from the host machine to the container, ensuring persistent data storage even with container restarts.
+- **.env Configuration:** All environment variables are easily configurable using the `.env` file, simplifying configuration management.
+- **Relational Database Guide:** A comprehensive guide on relational database structure, including one-to-one, one-to-many, and many-to-many relationships, is available detailed reference.
 
 <br/>
 
 <h2 id="releases">🚢 Releases</h2>
 
-&nbsp; [![.](https://img.shields.io/badge/1.2.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-postgresql/tree/v1.2.0)
+&nbsp; [![.](https://img.shields.io/badge/2.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/database-postgresql/tree/v2.0.0)
 
-&nbsp; [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-postgresql/tree/v1.1.0)
+&nbsp; [![.](https://img.shields.io/badge/1.2.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/database-postgresql/tree/v1.2.0)
 
-&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-postgresql/tree/v1.0.0)
+&nbsp; [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/database-postgresql/tree/v1.1.0)
+
+&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/database-postgresql/tree/v1.0.0)
 
 <br/>
 
 <h2 id="system-startup">🚀 System Startup</h2>
 
-- Create a new directory named `core`.
-- Clone the `core-docker-config` and `core-postgresql` repositories into the `core` directory.
+- Create a new directory named `database`.
 
 ```
-git clone https://github.com/ahmettoguz/core-docker-config
-git clone https://github.com/ahmettoguz/core-postgresql
+mkdir database
+cd database
 ```
-- Create `.env` file based on the `.env.example` file and configure it appropriately.
-- Refer to the documentation provided in the [`core-docker-config`](https://github.com/ahmettoguz/core-docker-config) project for the system startup commands.
+
+- Clone project.
+
+```
+git clone https://github.com/ahmettoguz/database-postgresql
+cd database-postgresql
+```
+
+- Create `.env` file based on the `.env.example` file with credentails.
+
+```
+cp .env.example .env
+```
+
+- Create `network-database` network if not exists.
+
+```
+docker network create network-database
+```
+
+- Run container.
+
+```
+docker stop                      database-postgresql-c
+docker rm                        database-postgresql-c
+docker compose -p database up -d postgresql
+docker logs -f                   database-postgresql-c
+```
 
 <br/>
 
