@@ -7,6 +7,8 @@ services:
       - ./mount:/var/lib/postgresql/data
     env_file:
       - ./.env
+    networks:
+      - network-database
     restart: ${RESTART_POLICY}
     # ports:
     #   - 5432:5432
