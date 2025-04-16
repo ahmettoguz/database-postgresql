@@ -1,4 +1,4 @@
-<h1 id="top" align="center">Database PostgreSQL</h1>
+<h1 id="top" align="center">PostgreSQL</h1>
 
 <br>
 
