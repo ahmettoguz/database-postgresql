@@ -65,6 +65,8 @@ docker logs -f                   database-postgresql-c
 
 - Refer to [`pgAdmin`](https://github.com/ahmettoguz/database-pgadmin) repository to launch pgAdmin to interact with database using GUI.
 
+- Refer to [`Initializer-Postgresql`](https://github.com/ahmettoguz/database-initializer-postgresql) repository to easily initialize and reset the database using SQL scripts.
+
 <br/>
 
 ### [🔝](#top)
