@@ -20,7 +20,7 @@
 - **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 - **Docker Compose Deployment:** Simplifies deployment with Docker Compose configuration, enabling easy setup and service orchestration without complex commands.
 - **Network Compatibility:** Uses shared Docker network to work with other services.
-- **Persistent Data:** Binds the data directory from the host machine to the container, ensuring persistent data storage even with container restarts.
+- **Persistent Data:** Utilizes a named Docker volume to ensure persistent storage of application data, allowing data to persist across container restarts, rebuilds, and removals.
 - **.env Configuration:** All environment variables are easily configurable using the `.env` file, simplifying configuration management.
 - **Relational Database Guide:** A comprehensive guide on relational database structure, including one-to-one, one-to-many, and many-to-many relationships, is available detailed reference.
 
@@ -46,6 +46,7 @@ cd database-postgresql
 
 ```
 cp .env.example .env
+nano .env
 ```
 
 - Create `network-database` network if not exists.
@@ -59,13 +60,14 @@ docker network create network-database
 ```
 docker stop                      database-postgresql-c
 docker rm                        database-postgresql-c
+docker volume rm                 volume-postgresql
 docker compose -p database up -d postgresql
 docker logs -f                   database-postgresql-c
 ```
 
 - Refer to [`pgAdmin`](https://github.com/ahmettoguz/database-pgadmin) repository to launch pgAdmin to interact with database using GUI.
 
-- Refer to [`Initializer-Postgresql`](https://github.com/ahmettoguz/database-initializer-postgresql) repository to easily initialize and reset the database using SQL scripts.
+- Refer to [`PostgreSQL Initializer`](https://github.com/ahmettoguz/database-initializer-postgresql) repository to easily initialize and reset the database using SQL scripts.
 
 <br/>
 

@@ -4,7 +4,7 @@ services:
     image: ahmettoguz/postgres:17
     container_name: database-postgresql-c
     volumes:
-      - ./mount:/var/lib/postgresql/data
+      - volume-postgresql:/var/lib/postgresql/data
     env_file:
       - ./.env
     networks:
@@ -17,3 +17,8 @@ services:
 networks:
   network-database:
     external: true
+
+####################################### Volumes
+volumes:
+  volume-postgresql:
+    name: volume-postgresql
