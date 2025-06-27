@@ -48,6 +48,8 @@ This project simplifies the deployment of PostgreSQL, using Docker Compose. It p
 
 <h2 id="releases">🚢 Releases</h2>
 
+&nbsp; [![.](https://img.shields.io/badge/2.1.1-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/database-postgresql/tree/v2.1.1)
+
 &nbsp; [![.](https://img.shields.io/badge/2.1.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/database-postgresql/tree/v2.1.0)
 
 &nbsp; [![.](https://img.shields.io/badge/2.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/database-postgresql/tree/v2.0.0)
@@ -92,11 +94,11 @@ docker network create network-database
 - Run container.
 
 ```
-docker stop                      database-postgresql-c
-docker rm                        database-postgresql-c
+docker stop                      container-postgresql
+docker rm                        container-postgresql
 docker volume rm                 volume-postgresql
-docker compose -p database up -d postgresql
-docker logs -f                   database-postgresql-c
+docker compose -p database up -d service-postgresql
+docker logs -f                   container-postgresql
 ```
 
 - Refer to [`pgAdmin`](https://github.com/ahmettoguz/database-pgadmin) repository to launch pgAdmin to interact with database using GUI.
