@@ -1,8 +1,8 @@
 ####################################### Services
 services:
-  postgresql:
+  service-postgresql:
     image: ahmettoguz/postgres:17
-    container_name: database-postgresql-c
+    container_name: container-postgresql
     volumes:
       - volume-postgresql:/var/lib/postgresql/data
     env_file:

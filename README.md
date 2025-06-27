@@ -58,11 +58,11 @@ docker network create network-database
 - Run container.
 
 ```
-docker stop                      database-postgresql-c
-docker rm                        database-postgresql-c
+docker stop                      container-postgresql
+docker rm                        container-postgresql
 docker volume rm                 volume-postgresql
-docker compose -p database up -d postgresql
-docker logs -f                   database-postgresql-c
+docker compose -p database up -d service-postgresql
+docker logs -f                   container-postgresql
 ```
 
 - Refer to [`pgAdmin`](https://github.com/ahmettoguz/database-pgadmin) repository to launch pgAdmin to interact with database using GUI.
