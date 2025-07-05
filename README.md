@@ -1,4 +1,4 @@
-<h1 id="top" align="center">PostgreSQL <br/> 🚢 v2.1.1 🚢</h1>
+<h1 id="top" align="center">PostgreSQL <br/> 🚢 v2.1.2 🚢</h1>
 
 <br>
 
@@ -42,6 +42,12 @@ git clone https://github.com/ahmettoguz/database-postgresql
 cd database-postgresql
 ```
 
+- Switch version.
+
+```
+git checkout v2.1.2
+```
+
 - Create `.env` file based on the `.env.example` file with credentails.
 
 ```
@@ -55,7 +61,7 @@ nano .env
 docker network create network-database
 ```
 
-- Run container.
+- Manage container.
 
 ```
 docker stop                      container-postgresql
