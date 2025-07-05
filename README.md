@@ -48,6 +48,8 @@ This project simplifies the deployment of PostgreSQL, using Docker Compose. It p
 
 <h2 id="releases">🚢 Releases</h2>
 
+&nbsp; [![.](https://img.shields.io/badge/2.1.2-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/database-postgresql/tree/v2.1.2)
+
 &nbsp; [![.](https://img.shields.io/badge/2.1.1-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/database-postgresql/tree/v2.1.1)
 
 &nbsp; [![.](https://img.shields.io/badge/2.1.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/database-postgresql/tree/v2.1.0)
@@ -78,6 +80,12 @@ git clone https://github.com/ahmettoguz/database-postgresql
 cd database-postgresql
 ```
 
+- Switch version.
+
+```
+git checkout v2.1.2
+```
+
 - Create `.env` file based on the `.env.example` file with credentails.
 
 ```
@@ -91,7 +99,7 @@ nano .env
 docker network create network-database
 ```
 
-- Run container.
+- Manage container.
 
 ```
 docker stop                      container-postgresql
